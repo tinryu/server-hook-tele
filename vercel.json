@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "functions": {
-    "api/stream-proxy.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "routes": [
-    { "src": "/(.*)", "dest": "/api/stream-proxy.js" }
-  ]
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
+  "env": {
+    "BOT_TOKEN": "@bot_token"
+  }
 }
