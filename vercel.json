@@ -1,9 +1,1 @@
-{
-  "version": 2,
-  "builds": [
-    { "src": "api/**/*.js", "use": "@vercel/node" }
-  ],
-  "env": {
-    "BOT_TOKEN": "@bot_token"
-  }
-}
+{}
