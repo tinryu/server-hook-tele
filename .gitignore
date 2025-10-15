@@ -4,3 +4,4 @@ node_modules
 .env.development.local
 GUIDE.md
 .vercel
+.gitignore

@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   if (!file_path) {
     return res.status(400).send("Missing file_path");
   }
-
+ 
   const fileUrl = `https://api.telegram.org/file/bot${BOT_TOKEN}/${encodeURI(file_path)}`;
   console.log("Proxying Telegram file:", fileUrl);
 

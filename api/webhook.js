@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   console.log("📩 Incoming Telegram update:", JSON.stringify(message, null, 2));
 
   if (!message) return res.sendStatus(200);
-
+ 
   const chatId = message.chat.id;
   const text = message.text || "No text";
 
